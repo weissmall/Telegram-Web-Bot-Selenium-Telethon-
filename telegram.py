@@ -118,7 +118,9 @@ async def main():
     await bot.start_session()
 
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(bot.get_messages_list('https://t.me/gray_kardinal_chat'))
+    loop.run_until_complete(bot.get_messages_list(
+        'https://t.me/gray_kardinal_chat'
+    ))
 
 
 if __name__ == '__main__':
